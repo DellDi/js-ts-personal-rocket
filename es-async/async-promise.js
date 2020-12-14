@@ -70,7 +70,7 @@ async function eachAsync2() {
 // eachAsync2()
 
 // 异步任务
-function Gen(time) {
+function GenLa(time) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
       resolve(time)
@@ -88,7 +88,7 @@ function Gen(time) {
 // test1()
 
 async function test2() {
-  let arr = [Gen(2000), Gen(100), Gen(3000)]
+  let arr = [GenLa(2000), GenLa(100), GenLa(3000)]
   //   arr.forEach(async (item) => {
   //     console.log(Date.now(), await item.then(console.log))
   //   })
